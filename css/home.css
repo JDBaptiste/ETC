@@ -1,0 +1,298 @@
+.shelve_label {
+  width: 350px;
+  height: 40px; ;
+  position: relative;
+  color: #848383;
+  font-size: 25px;
+  font-family: sofia;
+  margin: 30px 0 40px 20px;
+}
+
+.shelve_label p {
+  margin: 5px 0 0 20px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  animation-name: turn_white;
+  animation-timeline: view();
+  animation-range: entry 20% cover 20%;
+  animation-fill-mode: forwards;
+
+}
+
+.label1_box {
+  background-color: #2C3E50;
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  animation-range: entry 40% cover 40%;
+  animation-timeline: view(); 
+  animation-name: slide_box;
+  animation-fill-mode: forwards;
+}
+
+.label2_box {
+  position: absolute;
+  background-color: #ffa229;
+  z-index: 1;
+  width: 20px;
+  height: 40px;
+  top: 0px;
+  animation-name: slide_box2;
+  animation-timeline: view();
+  animation-range: entry 40% cover 40%;
+  animation-fill-mode: forwards;
+  left: 0px;
+}
+@keyframes turn_white {
+  0% {}
+  50%{
+      color: #ffffff;
+  }
+
+  100% {
+     color: #ffffff;
+  }
+}
+@keyframes slide_box {
+  0% {}
+
+  100% {
+      width: 300px;
+  }
+}
+
+@keyframes slide_box2 {
+  0% {
+
+  }
+  50%{
+      transform: translateY(5px);
+      left:2px;
+  }
+
+  100% {
+      left:5px;
+      width: 300px;
+      transform: translateY(5px);
+  }
+}
+.shelve {
+  margin: 20px 0 0 15%;
+  padding: 2px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-radius: 4px;
+
+}
+
+.books {
+  border-radius: 4px;
+  border: 1px solid #a3a3a3;
+  margin: 0px 1px 0 0px;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 300px;
+}
+
+
+.book_ilus {
+  align-self: center;
+  padding: 2px;
+  width: 154px;
+  height: 250px;
+}
+
+.book_ilus img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.book_name {
+  font-family: sofia;
+  text-align: center;
+  margin: 0;
+  padding: 2px;
+  color: #555555;
+  white-space: normal;
+
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cb9eff;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e83737;
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 8px;
+}
+
+.shelve_label {
+  color: #848383;
+  font-size: 25px;
+  font-family: sofia;
+  margin: 30px 0 0 40px;
+}
+
+.barline {
+  height: 2px;
+  width: 90%;
+  margin: 0 0 40px 5%;
+  background-color: #c2c2c2;
+}
+
+.wrapper1 {
+  padding: 0;
+
+}
+
+.opening_text {
+  width: 30px;
+}
+
+.opening-video {
+
+  width: 50%;
+  margin: 40px 0 40px 60px;
+  height: 250px;
+  background-color: black;
+
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.container2 p {
+  margin: 20px 0 0 40px;
+  width: 35%;
+  font-family: sofia;
+  font-size: 20px;
+  color: black;
+}
+
+
+.container1 p {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  font-family: sofia;
+  font-size: 25px;
+  top: 5px;
+  left: 10px;
+  color: white;
+}
+
+.container1 {
+  position: relative;
+  margin: 20px;
+  width: 200px;
+  height: 10px;
+}
+
+.label_box1 {
+  position: absolute;
+  background-color: #ffa229;
+  z-index: 2px;
+  width: 300px;
+  height: 40px;
+  margin: 5px 0 0 5px;
+}
+
+.label_box2 {
+  position: absolute;
+  background-color: #2C3E50;
+  z-index: 3px;
+  width: 300px;
+  height: 40px;
+}
+
+.slogan {
+  position: absolute;
+  margin: 0 0 0 80px;
+  padding: 0;
+  z-index: 4;
+  color: #ffffff;
+  font-family: Sofia;
+  width: 500px;
+  font-size: 55px;
+  background-color: transparent;
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Styling for the banner */
+.big_banner {
+  position: relative;
+  background-image: url("../image/back2.png");
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 1px;
+}
+
+.big_banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+
+.big_banner button {
+  z-index: 4;
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  font-family: Sofia;
+  font-weight: bold;
+  color: black;
+  background-color: #ffc85b;
+  border-radius: 15px;
+  bottom: 30px;
+  right: 20px
+}
+
+/* Button hover effect */
+.big_banner button:hover {
+  color: #ffffff;
+  background-color: #ffa229;
+  transition-duration: 1s;
+  border-color: white;
+}

@@ -1,0 +1,164 @@
+.sumary p{
+    margin:0;
+}
+.sumary p:nth-child(1){
+    font-size:20px;
+    color:#7d7d7d;
+}
+.book_desc{
+    font-family: sofia;
+}
+table {
+    border: 1px solid black;
+}
+
+.delivery_table th {
+    background-color: #9655f7;
+    width: 80px;
+}
+
+@media (max-width: 660px) {
+    .book_details {
+        padding: 0 0 0 10%;
+        text-align: center;
+    }
+}
+
+.rating {
+    margin: 10px 0 0 0;
+    width: 200px;
+    height: 20px;
+    display: flex;
+}
+
+.rating p {
+    margin: 0;
+}
+
+.rating img {
+    margin: 2px 0 0 0;
+    width: 100px;
+    height: 15px;
+}
+
+.book_info {
+    margin: 20px 0 0 0;
+}
+
+.book_info span {
+    margin: 0;
+    display: flex;
+
+
+}
+
+.book_info span p {
+    margin: 0;
+}
+
+.book_info span p:nth-child(2) {
+    color: #999999;
+    left: 100px;
+    margin: 0 0 0 10px;
+
+
+}
+
+.btn_wishlist {
+    margin: 10px 0 0 0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #9655f7;
+    color: #9655f7;
+    background-color: white;
+
+}
+
+.book_status {
+    color: #4a8e01;
+    margin: 10px 5px 0 10px;
+    font-size: 15px;
+}
+
+.book_price {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background-color: #2C3E50;
+    border: 4px solid #9655f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.book_price p:nth-child(1) {
+    color: #ff2e2e;
+    margin: 0 0 0 10px;
+}
+
+.book_price p {
+    font-size: 30px;
+    margin: 0;
+    color: #fffefe;
+}
+
+.book_name {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+.book_author {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    color: #999999;
+}
+
+.book {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book_ilus {
+    margin: 20px;
+    width: 400px;
+    width: 30%;
+    /* background-color: blue; */
+    min-width: 300px;
+}
+
+.book_ilus img {
+    margin-left: 10%;
+    width: 300px;
+    height: 450px;
+}
+
+.book_details {
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: sofia;
+    width: 300px;
+    height: 500px;
+    /* background-color: chartreuse; */
+}
+
+.book_desc {
+    width:30%;
+    min-width: 300px;
+    padding:30px 20px 20px 20px;
+    font-size:17px;
+}
+
+@media (max-width: 990px) {
+    .book_desc {
+        min-width: none;
+        width:80%;
+        margin:0 0 0 10%;
+        font-size:17px;
+    }
+}
+

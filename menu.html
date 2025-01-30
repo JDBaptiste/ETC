@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<header>
+
+</header>
+
+<body>
+    <form>
+        <table class="menue">
+            <tr>
+                <td>
+                    <p>Personal Detail's</p>
+                </td >
+                <td colspan="2"class="personal_input">
+                    <div><label>First Name:</label><input type="text"></div>
+                    <div><label> last Name:</label><input type="text"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Menu choice's
+                </td>
+                <td colspan="2">
+                    <input type="checkbox">
+                    <label>Saturday</label>
+                    <input type="checkbox">
+                    <label>Sunday</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Paid</p>
+                </td>
+                <td colspan="2">
+                    <label>Yes</label>
+                    <input type="checkbox">
+                    <label>No</label>
+                    <input type="checkbox">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Room number</td>
+                <td colspan="2"><select>
+                    <option>Room1</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="button_box">
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><b>Day</b></p>
+                <td>
+                    <p><b>Menue</b></p>
+                <td>
+                    <p><b>Image</b></p>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Saturday</p>
+                </td>
+                <td> Soup <a href="#">See Ingredients</a></td>
+                <td><img src=""></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Sunday</p>
+                </td>
+                <td> Pizza <a href="#">See Ingredients</a></td>
+                <td><img src=""></td>
+            </tr>
+            
+            <tr colspan="3">
+                <td></td>
+            </tr>
+          
+        </table>
+    </form>
+    <style>
+        .menue {
+            border: 1px solid black;
+            width: 600px;
+          
+        }
+        
+
+        .menue tr td {
+            border: 1px solid #000;
+            padding:5px;
+        }
+
+        .personal_input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .button_box button:nth-child(1){
+            margin:0 0 0 40%;
+            
+        }
+    </style>
+</body>
+
+</html>

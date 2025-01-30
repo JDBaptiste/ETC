@@ -1,0 +1,258 @@
+.big_wrapper {
+    /* background-color: darkorange; */
+    display: flex;
+    position: relative;
+}
+
+.filter-container {
+    border-right:2px solid #7e7e7e;
+    width: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.filter {
+    width: 250px;
+    height: 300px;
+    background-color: transparent;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.filter_btn_container {
+    margin:0;
+}
+
+.filter_btn_container button {
+    background-color: #2C3E50;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    font-family: sofia;
+
+}
+
+.shelve_wrapper {
+    width: 70%;
+}
+@media(max-width:1100px){
+    .shelve_wrapper {
+        width: 60%;
+    }
+}
+
+.shelve {
+    margin: 0 0 0 20px;
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-radius: 4px;
+
+}
+
+.books {
+    border-radius: 4px;
+    border: 1px solid #a3a3a3;
+    margin: 0px 1px 0 0px;
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 300px;
+}
+
+
+.book_ilus {
+    align-self: center;
+    padding: 2px;
+    width: 154px;
+    height: 250px;
+}
+
+.book_ilus img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.book_name {
+    font-family: sofia;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    color: #555555;
+    white-space: normal;
+
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cb9eff;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e83737;
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+.shelve_label {
+    color: #848383;
+    font-size: 25px;
+    font-family: sofia;
+    margin: 30px 0 0 40px;
+}
+
+.barline {
+    margin: 20px 0 0 0;
+    background-color: #803939;
+    height: 1px;
+    width: 100px;
+
+}
+
+
+
+@media (max-width: 900px) {
+    .filter{
+        display:none;
+    }
+    .big_wrapper {
+        display: contents;
+    }
+
+    .shelve_wrapper {
+        width: 90%;
+    }
+
+    .container {
+        display: none;
+    }
+}
+
+.fbox {
+    margin: 0 0 0 10px;
+    width: 300px;
+    height: auto;
+    color: #7e7e7e;
+}
+
+.fbox2 p {
+    font-size: 25px;
+    margin: 0 0 5px 15px;
+    padding: 5px;
+    font-family: sofia;
+}
+
+
+.fbox_checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item label {
+    font-family: sofia;
+    color: #233122;
+    font-size: 20px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    transform: scale(1.3);
+    margin: 5px;
+}
+
+.fbox_label {
+    margin-left: 8px;
+}
+
+
+#fbox_name {
+    display: none;
+}
+
+#fbox_pdate {
+    display: none;
+}
+
+#fbox_price {
+    display: none;
+
+}
+
+
+
+.fbox_container input {
+    font-family: sofia;
+    margin: 0 0 0 10px;
+
+}
+
+.fbox_container {
+    margin:10px 0 0 0;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #ffdd77;
+
+}
+
+.fbox_label {
+    font-family: sofia;
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+}
+
+.fbox_checkbox {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.filter_label p{
+    font-family:sofia;
+    font-size:20px;
+    margin:0 0 5px 0;
+
+
+}
+
+.barline {
+    margin: 0 0 10px 20px;
+    width: 200px;
+    height: 1.5px;
+    background-color: #c3c1c1;
+    border-radius: 1px;
+}
+

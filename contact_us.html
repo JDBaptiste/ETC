@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title></title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cu.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+
+<body>
+    <!-- NAVBAR STARTS HERE  -->
+    <div id="navbar">
+
+        <div id="bar1">
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/fast-delivery.png">
+                </div>
+                <div class="announce1">
+                    <p>Up-to 30% discount on delivery</p>
+                    <p>limited time offer</p>
+                </div>
+            </div>
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/id-card.png">
+                </div>
+                <div class="announce1">
+                    <p>3 book purchase get a fidelity</p>
+                    <p>premium membership</p>
+                </div>
+            </div>
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/price-tag.png">
+                </div>
+                <div class="announce1">
+                    <p>10% discount on comics book sales </p>
+                    <p>limited time offer</p>
+                </div>
+            </div>
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/fast-delivery.png">
+                </div>
+                <div class="announce1">
+                    <p>Up-to 30% discount on delivery</p>
+                    <p>limited time offer</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bar2">
+            <div class="logo">
+                <img src="image/logo.png">
+                <div>
+                    <p>T Emblemy</p>
+                    <p>Collectible Books</p>
+                </div>
+            </div>
+
+            <a href="#" id="account_link" class="link1">
+
+                <div><img src="image/account.png"></div>
+                <p>Account</p>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div id="bar3">
+
+        <div class="link-box">
+            <a href="index.html">
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="line"></div>
+
+
+        <div class="link-box">
+            <a href="book.html">
+                <p>Book</p>
+            </a>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="link-box">
+            <a href="19th_century_book.html">
+                <p>19<sup>th</sup> century collection</p>
+            </a>
+        </div>
+
+        <div class="link-box  selected_link">
+            <a href="#">
+                <p>contact Us</p>
+            </a>
+        </div>
+
+        <div class="link-box">
+            <a href="#">
+                <p>Delivery</p>
+            </a>
+        </div>
+
+    </div>
+    </div>
+
+    <form id="login_form">
+        <div class="login_logo"> <img src="image/logo.png">
+        </div>
+        <div class="login_fields">
+
+          
+
+            <div class="login_field_box">
+                <div><img class="login_icon" src="image/user.png"></div>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="login_field_box">
+                <div><img class="login_icon" src="image/key.png"></div>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+        </div>
+
+        <a id="fp" href="#">Forget password?</a>
+
+        <button id="login_btn" type="submit">Login</button>
+    </form>
+
+    <form id="small_search_bar">
+        <input type="text" placeholder="Enter the book name/ISBN...">
+        <button type="submit">search</button>
+    </form>
+    <!-- NAVBAR ENDS HERE -->
+    <script src="scripts/navbar.js"></script>
+    <div class="big_banner"></div>
+
+    <div class="container">
+        <form id="contact_us">
+            <p>Contact Us</p>
+
+            <div class="contactUs_box selection">
+                <label for="title">Title: </label>
+                <select id="title" name="title">
+                  <option value="1">Mr</option>
+                  <option value="2">Mrs</option>
+                  <option value="3">Miss</option>
+                  <option value="4">Ms</option>
+                  <option value="5">Dr</option>
+                  <option value="6">Pro</option>
+                </select>
+            </div>
+
+            <style>
+                .selection label{
+                    color:#c5c5c5;
+                    font-family: sofia;
+                    font-size: 18px;
+                    margin:0 10px 0 30px;
+                }
+                .selection{
+                    padding:15px 0 15px 0;
+                }
+                .selection select{
+                    border:none;
+                    background-color:#2C3E50;
+width:150px;
+font-size:18px;
+font-family:sofia;
+color:#c5c5c5;
+
+                    
+                }
+
+                .selection option{
+                    background-color:#000000;
+                }
+                
+            </style>
+
+
+            <div class="contactUs_box">
+                <div><img class="contactUs_icon" src="image/people.png"></div>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="contactUs_box">
+                <div><img class="contactUs_icon" src="image/email1.png"></div>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="contactUs_box selection">
+                <label for="Query">Reason Of Query:</label>
+                <select id="query" name="Query">
+                  <option value="b">Buy books</option>
+                  <option value="s">Sell books</option>
+                  <option value="r">Return a book</option>
+                  <option value="d">Delivery</option>
+                  <option value="c">Complaint</option>
+                  <option value="o">Other</option>
+                </select>
+            </div>
+
+            <div class="contactUs_box">
+                <div><img class="contactUs_icon" src="image/comment.png"></div>
+                <textarea id="email" name="email" placeholder="what is your message?" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <div class="info_container">
+            <div class="info_box">
+                <div class="info_icon"><img src="image/location.png"></div>
+                <p>5<sup>th</sup> street Grendial covill,</br>New York City,</br>USA</p>
+            </div>
+
+            <div class="info_box">
+                <div class="info_icon"><img src="image/at-sign.png"></div>
+                <p>T_emblemyBookstore</br>@gmail.com</p>
+            </div>
+
+            <div class="info_box">
+                <div class="info_icon"><img src="image/phone-call.png"></div>
+                <p>000-000-xx-00</p>
+            </div>
+        </div>
+
+        </div>
+
+ 
+    
+        <footer>
+            <div class="footer_logo footer_box">
+                <img src="image/logo.png">
+                <p>T Emblemy</p>
+            </div>
+
+            <div class="follow footer_box">
+                <p>Follow us on social media</p>
+                <div>
+                    <img src="image/facebook.png">
+                    <img src="image/instagram.png">
+                    <img src="image/twitter.png">
+                    <img src="image/snapchat.png">
+                </div>
+            </div>
+
+            <div class="contact_us footer_box">
+                <p>Do you have a query?</p>
+                <a href="contact_us.html">Contact us</a>
+            </div>
+
+        </footer>
+        
+          </body>
+
+   
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title></title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+
+<body>
+    <!-- NAVBAR STARTS HERE  -->
+    <div id="navbar">
+
+        <div id="bar1">
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/fast-delivery.png">
+                </div>
+                <div class="announce1">
+                    <p>Up-to 30% discount on delivery</p>
+                    <p>limited time offer</p>
+                </div>
+            </div>
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/id-card.png">
+                </div>
+                <div class="announce1">
+                    <p>3 book purchase get a fidelity</p>
+                    <p>premium membership</p>
+                </div>
+            </div>
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/price-tag.png">
+                </div>
+                <div class="announce1">
+                    <p>10% discount on comics book sales </p>
+                    <p>limited time offer</p>
+                </div>
+            </div>
+
+            <div class="announce_container">
+                <div class="announce1_img">
+                    <img src="image/fast-delivery.png">
+                </div>
+                <div class="announce1">
+                    <p>Up-to 30% discount on delivery</p>
+                    <p>limited time offer</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="bar2">
+
+            <div class="logo">
+                <img src="image/logo.png">
+
+                <div>
+                    <p>T Emblemy</p>
+                    <p>Collectible Books</p>
+                </div>
+            </div>
+
+            <div class="bar2_container">
+                <form class="search">
+                    <input type="text" placeholder="Enter the book name/ISBN...">
+                    <button type="submit"><img src="image/magnifying-glass-search.png"></button>
+                </form>
+
+
+                <a href="#" id="search_link" class="link1">
+
+                    <div><img src="image/search.png"></div>
+                    <p>search</p>
+                </a>
+
+                <a href="#" id="account_link" class="link1">
+
+                    <div><img src="image/account.png"></div>
+                    <p>Account</p>
+                </a>
+
+                <a href="#" class="link1">
+                    <div>
+                        <img src="image/basket.png">
+                        <div class="notification">
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <p>Basket</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="bar3">
+
+            <div class="link-box">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+            </div>
+
+            <div class="link-box selected_link">
+                <a href="#">
+                    <p>Book</p>
+                </a>
+            </div>
+
+
+            <div class="link-box">
+                <a href="19th_century_book.html">
+                    <p>19<sup>th</sup> century collection</p>
+                </a>
+            </div>
+            <div class="line"></div>
+
+            <div class="link-box">
+                <a href="contact_us.html">
+                    <p>contact Us</p>
+                </a>
+            </div>
+            <div class="line"></div>
+
+            <div class="link-box">
+                <a href="#">
+                    <p>Delivery</p>
+                </a>
+            </div>
+
+        </div>
+        <div id="bar4">
+            <form class="ex-search">
+                <input type="text" placeholder="Enter the book name/ISBN...">
+                <button type="submit"><img src="image/search.png"></button>
+            </form>
+        </div>
+    </div>
+
+    <form id="login_form">
+        <div class="login_logo"> <img src="image/logo.png">
+        </div>
+        <div class="login_fields">
+
+            <div class="login_field_box">
+                <div><img class="login_icon" src="image/user.png"></div>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="login_field_box">
+                <div><img class="login_icon" src="image/key.png"></div>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+        </div>
+        <a id="fp" href="#">Forget password?</a>
+
+        <button id="login_btn" type="submit">Login</button>
+    </form>
+
+    <form id="small_search_bar">
+        <input type="text" placeholder="Enter the book name/ISBN...">
+        <button type="submit">search</button>
+    </form>
+    <!-- NAVBAR ENDS HERE -->
+
+    <div class="big_wrapper">
+
+        <div class="filter-container">
+
+            <div class="filter">
+                <div class="filter_label">
+                    <p>Filter</p>
+                </div>
+
+                <div class="filter_btn_container">
+                    <button id="filtername_btn">Name</button>
+                    <button id="filterpdate_btn">Published Date</button>
+                    <button id="filterprice_btn">Price</button>
+                </div>
+
+                <div id="fbox_name" class="fbox_container">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fname1">
+                        <label for="bookFilterCheckbox1" class="fbox_label">A-E</label>
+                    </div>
+
+
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fname2">
+                        <label for="bookFilterCheckbox2" class="fbox_label">F-J</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fname3">
+                        <label for="bookFilterCheckbox3" class="fbox_label">K-P</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fname4">
+                        <label for="fname4" class="fbox_label">R-S</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fname5">
+                        <label for="fname5" class="fbox_label">T-V</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fname6">
+                        <label for="fname6" class="fbox_label">W-Z</label>
+                    </div>
+
+                </div>
+
+                <div id="fbox_pdate" class="fbox_container">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd1">
+                        <label for="fpd1" class="fbox_label">&gt;2021</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd2">
+                        <label for="fpd2" class="fbox_label">&lt;2020</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd3">
+                        <label for="fpd3" class="fbox_label">&lt;2015</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd4">
+                        <label for="fpd4" class="fbox_label">&lt;2010</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd5">
+                        <label for="fpd5" class="fbox_label">&lt;2005</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd6">
+                        <label for="fpd6" class="fbox_label">&lt;2000</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fpd7">
+                        <label for="fpd7" class="fbox_label">&lt;1990</label>
+                    </div>
+                </div>
+
+                <div id="fbox_price" class="fbox_container">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fprice1">
+                        <label for="fprice1" class="fbox_label">&gt;40$</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fprice2">
+                        <label for="fprice2" class="fbox_label">&lt;40$</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fprice3">
+                        <label for="fprice3" class="fbox_label">&lt;30$</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fprice4">
+                        <label for="fprice4" class="fbox_label">&lt;20$</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fprice5">
+                        <label for="fprice5" class="fbox_label">&lt;15$</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fprice6">
+                        <label for="fprice6" class="fbox_label">&lt;10$</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="shelve_wrapper">
+
+            <p class="shelve_label">Best seller</p>
+
+            <!-- LATEST -->
+            <div id="newbooks" class="shelve">
+                <a href="the_sum_of_all_things.html">
+                    <div class="books" id="book1">
+                        <div class="book_ilus">
+                            <img src="book_image\The_sum_of_all_things.webp">
+                        </div>
+                        <p class="book_name">The Sum of All Things</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="books" id="book2">
+                        <div class="book_ilus">
+                            <img src="book_image\Head_kid.webp">
+                        </div>
+                        <p class="book_name">Head Kid</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="books" id="book3">
+                        <div class="book_ilus">
+                            <img src="book_image\jaws.jpg">
+                        </div>
+                        <p class="book_name">Jaws</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="books" id="book4">
+                        <div class="book_ilus">
+                            <img src="book_image\gift_of_earth.jpg">
+                        </div>
+                        <p class="book_name">Gift Of Earth</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="books" id="book5">
+                        <div class="book_ilus">
+                            <img src="book_image\another_side_of_the_moon.webp">
+                        </div>
+                        <p class="book_name">Another Side Of The Moon</p>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="books" id="book6">
+                        <div class="book_ilus">
+                            <img src="book_image\something_nasty_in_the_woodshed.jpg">
+                        </div>
+                        <p class="book_name">Something Nasty In The Woodshed</p>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="books" id="book7">
+                        <div class="book_ilus">
+                            <img src="book_image\a_thousand_piece_of_you.jpg">
+                        </div>
+                        <p class="book_name">A Thousand Piece Of You</p>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="books" id="book8">
+                        <div class="book_ilus">
+                            <img src="book_image\the_lives_we_lost.jpg">
+                        </div>
+                        <p class="book_name">The Live We Lost</p>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="books" id="book9">
+                        <div class="book_ilus">
+                            <img src="book_image\soul.jpg">
+                        </div>
+                        <p class="book_name">SOUL</p>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="books" id="book10">
+                        <div class="book_ilus">
+                            <img src="book_image\revenant_gun.jpg">
+                        </div>
+                        <p class="book_name">Revenant Gun</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- COMICS -->
+            <p class="shelve_label">Comics</p>
+
+            <div id="comicbooks" class="shelve">
+                <div class="books" id="book11">
+                    <div class="book_ilus">
+                        <img src="book_image\spiderman_1.jpg">
+                    </div>
+                    <p class="book_name">Spiderman #1</p>
+                </div>
+
+                <div class="books" id="book12">
+                    <div class="book_ilus">
+                        <img src="book_image\the_man_of_steel.jpg">
+                    </div>
+                    <p class="book_name">The Man of Steel</p>
+                </div>
+
+                <div class="books" id="book13">
+                    <div class="book_ilus">
+                        <img src="book_image\x-o_manowar.jpg">
+                    </div>
+                    <p class="book_name">X-O Manowar #1</p>
+                </div>
+
+                <div class="books" id="book14">
+                    <div class="book_ilus">
+                        <img src="book_image\x-o_manowar29.jpg">
+                    </div>
+                    <p class="book_name">X-O Manowar #29</p>
+                </div>
+
+                <div class="books" id="book15">
+                    <div class="book_ilus">
+                        <img src="book_image\les_tresor_de_picsou65.jpg">
+                    </div>
+                    <p class="book_name">Les Tresor De Picsou #65</p>
+                </div>
+
+
+                <div class="books" id="book16">
+                    <div class="book_ilus">
+                        <img src="book_image\Star_Wars_Darth_Vader_Vol_1.jpg">
+                    </div>
+                    <p class="book_name">Star Wars Darth Vader #1</p>
+                </div>
+
+                <div class="books" id="book17">
+                    <div class="book_ilus">
+                        <img src="book_image\X-men_gold_1.jpg">
+                    </div>
+                    <p class="book_name">X-MEN gold #1</p>
+                </div>
+            </div>
+
+            <!-- ROMANCE -->
+            <p class="shelve_label">Romance</p>
+
+            <div id="comicbooks" class="shelve">
+                <div class="books" id="book30">
+                    <div class="book_ilus">
+                        <img src="book_image\Seraph.jpg">
+                    </div>
+                    <p class="book_name">seraph</p>
+                </div>
+
+                <div class="books" id="book31">
+                    <div class="book_ilus">
+                        <img src="book_image\diana_palmer.jpg">
+                    </div>
+                    <p class="book_name">Diana Palmer</p>
+                </div>
+
+                <div class="books" id="book32">
+                    <div class="book_ilus">
+                        <img src="book_image\firstime_on_a_horse.jpg">
+                    </div>
+                    <p class="book_name">First time On A Horse</p>
+                </div>
+
+                <div class="books" id="book33">
+                    <div class="book_ilus">
+                        <img src="book_image\sunset_kiss.jpg">
+                    </div>
+                    <p class="book_name">Sunset Kiss</p>
+                </div>
+
+                <div class="books" id="book34">
+                    <div class="book_ilus">
+                        <img src="book_image\The_scandalous_duke_takes_a_bride.jpg">
+
+                    </div>
+                    <p class="book_name">The Scandalous Duke Takes A Bride</p>
+                </div>
+
+                <div class="books" id="book35">
+                    <div class="book_ilus">
+                        <img src="book_image\heart stone.jpg">
+                    </div>
+                    <p class="book_name">Heart Stone</p>
+                </div>
+
+                <div class="books" id="book36">
+                    <div class="book_ilus">
+                        <img src="book_image\always_never_yours.jpg">
+                    </div>
+                    <p class="book_name">Always Never Yours</p>
+                </div>
+            </div>
+
+            <!-- HORROR -->
+            <p class="shelve_label">Horror</p>
+
+            <div id="comicbooks" class="shelve">
+                <div class="books" id="book40">
+                    <div class="book_ilus">
+                        <img src="book_image\who_goes_there.jpg">
+                    </div>
+                    <p class="book_name">Who Goes There?</p>
+                </div>
+
+                <div class="books" id="book41">
+                    <div class="book_ilus">
+                        <img src="book_image\dead_body_disposal.jpg">
+                    </div>
+                    <p class="book_name">Dead Body Disposal</p>
+                </div>
+
+                <div class="books" id="book42">
+                    <div class="book_ilus">
+                        <img src="book_image\over_the_edge.jpg">
+                    </div>
+                    <p class="book_name">Over The Edge</p>
+                </div>
+
+
+                <div class="books" id="book43">
+                    <div class="book_ilus">
+                        <img src="book_image\brimestone.jpg">
+                    </div>
+                    <p class="book_name">Brimestone</p>
+                </div>
+
+
+                <div class="books" id="book44">
+                    <div class="book_ilus">
+                        <img src="book_image\grave_secrets.jpg">
+                    </div>
+                    <p class="book_name">Grave Secrets</p>
+                </div>
+
+
+                <div class="books" id="book45">
+                    <div class="book_ilus">
+                        <img src="book_image\the_path_of_nowhere.jpg">
+                    </div>
+                    <p class="book_name">The Path Of Nowhere</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/book.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <footer>
+        <div class="footer_logo footer_box">
+            <img src="image/logo.png">
+            <p>T Emblemy</p>
+        </div>
+
+        <div class="follow footer_box">
+            <p>Follow us on social media</p>
+            <div>
+                <img src="image/facebook.png">
+                <img src="image/instagram.png">
+                <img src="image/twitter.png">
+                <img src="image/snapchat.png">
+            </div>
+        </div>
+
+        <div class="contact_us footer_box">
+            <p>Do you have a query?</p>
+            <a href="contact_us.html">Contact us</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+</DOCTYPE>
